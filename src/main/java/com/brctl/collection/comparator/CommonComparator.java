@@ -1,4 +1,4 @@
-package com.brctl.comparator;
+package com.brctl.collection.comparator;
 
 /**
  * common comparator

@@ -1,5 +1,6 @@
 package com.brctl;
 
+import com.brctl.collection.Main;
 import org.junit.Test;
 
 /**

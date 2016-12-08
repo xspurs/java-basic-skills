@@ -1,4 +1,4 @@
-package com.brctl.domain;
+package com.brctl.collection.domain;
 
 /**
  * Created by Orclover on 2016-12-08.

@@ -1,8 +1,8 @@
-package com.brctl;
+package com.brctl.collection;
 
-import com.brctl.comparator.StudentComparator;
-import com.brctl.domain.ComparableStudent;
-import com.brctl.domain.Student;
+import com.brctl.collection.comparator.StudentComparator;
+import com.brctl.collection.domain.ComparableStudent;
+import com.brctl.collection.domain.Student;
 import java.lang.reflect.Constructor;
 import java.util.ArrayList;
 import java.util.List;

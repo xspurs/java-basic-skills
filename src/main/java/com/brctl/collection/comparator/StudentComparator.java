@@ -1,6 +1,6 @@
-package com.brctl.comparator;
+package com.brctl.collection.comparator;
 
-import com.brctl.domain.Student;
+import com.brctl.collection.domain.Student;
 
 /**
  * student comparator
