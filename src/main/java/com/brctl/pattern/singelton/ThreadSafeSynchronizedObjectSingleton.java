@@ -16,7 +16,7 @@ public class ThreadSafeSynchronizedObjectSingleton {
 
     // class method to get the singleton
     public static ThreadSafeSynchronizedObjectSingleton getInstance() {
-        synchronized (LOCK) {
+        synchronized (lock) {
             if(instance == null) {
                 instance = new ThreadSafeSynchronizedObjectSingleton();
             }
@@ -25,6 +25,8 @@ public class ThreadSafeSynchronizedObjectSingleton {
     }
 
     // dummy object for synchronized use
-    private static final Object LOCK = new Object();
+    static private class Lock {
 
+    }
+    private static final Lock lock = new Lock();
 }
