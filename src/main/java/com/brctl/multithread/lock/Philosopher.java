@@ -53,6 +53,9 @@ public class Philosopher extends Thread {
             this.eating = false;
             this.left.condition.signal();
             this.right.condition.signal();
+            // 区别？
+            // this.left.condition.signalAll();
+            // this.right.condition.signalAll();
             System.out.println(System.identityHashCode(this) + " is thinking...");
         } finally {
             this.table.unlock();
@@ -76,7 +79,7 @@ public class Philosopher extends Thread {
 
 }
 
-class Test {
+class PhilosopherTest {
 
     public static void main(String[] args) {
         ReentrantLock table = new ReentrantLock();
