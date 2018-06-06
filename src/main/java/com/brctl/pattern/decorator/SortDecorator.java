@@ -3,6 +3,7 @@ package com.brctl.pattern.decorator;
 import lombok.extern.slf4j.Slf4j;
 
 /**
+ * SortDecorator
  * @author duanxiaoxing
  * @created 2017/8/27
  */

@@ -20,7 +20,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.LinkedBlockingQueue;
 
-import static com.brctl.multithread.producerconsumer.WrodCounter.FILE_PATH;
+import static com.brctl.multithread.producerconsumer.WordCounter.FILE_PATH;
 
 /**
  * 生产者/消费者word counter
@@ -30,10 +30,10 @@ import static com.brctl.multithread.producerconsumer.WrodCounter.FILE_PATH;
  * @created 2017/8/13
  */
 @Slf4j
-public class WrodCounter {
+public class WordCounter {
 
     public static final String FILE_PATH = "/Users/duanxiaoxing/Desktop/to_word_count.txt";
-    //public static final String FILE_PATH = "/Users/duanxiaoxing/Desktop/gone_with_the_wind.txt";
+//    public static final String FILE_PATH = "/Users/duanxiaoxing/Desktop/gone_with_the_wind.txt";
 
     public static void main(String[] args) throws IOException, InterruptedException {
         File file = new File(FILE_PATH);
@@ -66,7 +66,7 @@ public class WrodCounter {
         executorService.shutdown();
         log.info("total time(milliseconds): {}", System.currentTimeMillis() - startTime);
 
-        //log.info("statistics: {}", counts);
+        log.info("statistics: {}", counts);
 
     }
 }

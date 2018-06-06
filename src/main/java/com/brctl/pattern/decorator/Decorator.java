@@ -1,7 +1,7 @@
 package com.brctl.pattern.decorator;
 
 /**
- * Decorator
+ * Decorator / Forwarding Class
  * @author duanxiaoxing
  * @created 2017/8/27
  */
