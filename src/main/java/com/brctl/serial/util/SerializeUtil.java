@@ -1,4 +1,4 @@
-package com.brctl.serial;
+package com.brctl.serial.util;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
