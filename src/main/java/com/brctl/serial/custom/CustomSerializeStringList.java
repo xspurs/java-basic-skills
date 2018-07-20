@@ -46,6 +46,7 @@ public class CustomSerializeStringList<E> implements Serializable {
      * @param s
      * @throws IOException
      * @see java.io.ObjectStreamClass
+     * @serialData use @serialData to explore the API doc
      */
     private void writeObject(ObjectOutputStream s) throws IOException {
         // default
