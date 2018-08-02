@@ -1,6 +1,6 @@
 package com.brctl.serial.hessian;
 
-import bean.Person;
+import com.brctl.serial.bean.Person;
 import com.caucho.hessian.io.HessianInput;
 import com.caucho.hessian.io.HessianOutput;
 import lombok.extern.slf4j.Slf4j;

@@ -4,7 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 import lombok.extern.slf4j.Slf4j;
-import util.SerializeUtil;
+import com.brctl.serial.util.SerializeUtil;
 
 import java.io.Externalizable;
 import java.io.IOException;
@@ -79,7 +79,8 @@ public class ExternalizableDefaultPerson implements Externalizable {
     }
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args)
+            throws IOException, ClassNotFoundException {
         ExternalizableDefaultPerson person = new ExternalizableDefaultPerson();
         person.setName("Hanks");
         person.setPhone("15201612666");

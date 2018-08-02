@@ -1,6 +1,6 @@
 package com.brctl.serial.kryo;
 
-import bean.Person;
+import com.brctl.serial.bean.Person;
 import com.esotericsoftware.kryo.Kryo;
 import com.esotericsoftware.kryo.io.Input;
 import com.esotericsoftware.kryo.io.Output;

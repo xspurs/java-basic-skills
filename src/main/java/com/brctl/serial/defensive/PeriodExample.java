@@ -1,7 +1,7 @@
 package com.brctl.serial.defensive;
 
 import lombok.extern.slf4j.Slf4j;
-import util.SerializeUtil;
+import com.brctl.serial.util.SerializeUtil;
 
 /**
  * PeriodExample
