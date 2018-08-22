@@ -1,5 +1,7 @@
 package com.brctl.algorithm.sort;
 
+import java.util.Arrays;
+
 /**
  * QuickSort
  * O(nlogn) ~ O(n^2), O(nlogn) as average
@@ -28,5 +30,11 @@ public class QuickSort {
             sort(toSort, low + 1, end);
         }
         return toSort;
+    }
+
+
+    public static void main(String[] args) {
+        int[] array = new int[]{1, 3, 8, 2, 10, 11, 7, 6};
+        System.out.println(Arrays.toString(sort(array, 0, array.length - 1)));
     }
 }

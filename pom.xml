@@ -16,13 +16,14 @@
         <junit.version>4.12</junit.version>
         <slf4j.version>1.7.10</slf4j.version>
         <lombok.version>1.16.10</lombok.version>
-        <guava.version>18.0</guava.version>
+        <guava.version>23.0</guava.version>
         <commons.lang3.version>3.7</commons.lang3.version>
         <spring.version>4.1.5.RELEASE</spring.version>
         <cglib.version>2.2</cglib.version>
         <kryo.version>4.0.2</kryo.version>
         <protobuf.version>3.5.1</protobuf.version>
         <hessian.version>4.0.51</hessian.version>
+        <ehcache.version>3.2.0</ehcache.version>
     </properties>
 
     <dependencies>
@@ -87,6 +88,18 @@
             <groupId>com.caucho</groupId>
             <artifactId>hessian</artifactId>
             <version>${hessian.version}</version>
+        </dependency>
+        <!-- ehcache -->
+        <dependency>
+            <groupId>org.ehcache</groupId>
+            <artifactId>ehcache</artifactId>
+            <version>${ehcache.version}</version>
+        </dependency>
+        <!-- javax.inject -->
+        <dependency>
+            <groupId>javax.inject</groupId>
+            <artifactId>javax.inject</artifactId>
+            <version>1</version>
         </dependency>
     </dependencies>
 

@@ -14,6 +14,8 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class InnerClass {
 
+    private String fixedPrefix = "prefix_";
+
     // static member class
     // can be private/default/protected/public
     static class StaticMemberClass {
@@ -39,13 +41,24 @@ public class InnerClass {
 
     public void sayHello(String word) {
         // local class
-        // can not be private/protected/public, just like normal local variables
+        // can not be private/protected/public(i.e. only default scope is permitted), just like normal local variables
         class LocalClass {
             public void say() {
                 // in java 8, variable in anonymous class & local class is EFFECTIVELY FINAL
-                log.info("say {}", word);
+                log.info("{} say {}", fixedPrefix, word);
             }
         }
+        new LocalClass().say();
+    }
+
+
+    /**
+     * main
+     * @param args
+     */
+    public static void main(String[] args) {
+        InnerClass innerClass = new InnerClass();
+        innerClass.sayHello("words in local class");
     }
 
 }
